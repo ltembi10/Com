@@ -1,0 +1,23 @@
+Design Memo: Team Management Binary Tree**
+Recursive insertion works by starting at the root of the tree and 
+checking whether the current employee is the manager we are looking 
+for. If the manager is found, the program checks whether the requested 
+left or right side is empty. If it is available, a new employee node 
+is created and added. If the manager is not found, the method searches
+the left and right branches by calling itself again. This continues
+until the manager is found or the program has searched the tree.
+One challenge was finding the correct manager when they were not at 
+the top of the tree. I also had to make sure that an employee was not 
+added to a side that was already occupied. Another challenge was 
+handling situations where the manager's name did not exist. Checking 
+these conditions helps prevent errors and keeps the reporting 
+structure organized.
+Trees can be useful in real-world systems when information has a 
+hierarchy. For example, companies can use trees to show managers and 
+the employees who report to them. Trees are also used in computer file
+systems, decision-making programs, and searching algorithms. Compared
+with a simple list, a tree can represent relationships between 
+items more clearly. A binary tree limits each node to two children, 
+so it is useful when each item needs two possible branches. 
+However, other tree structures may be better for organizations 
+where managers supervise many employees.
